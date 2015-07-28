@@ -1,0 +1,359 @@
+//--------------------------------//
+//  Theme
+//--------------------------------//
+
+a {
+  color: #666666;
+  text-decoration: none;
+  &:visited {
+    color: #666666;
+  }
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}
+
+//--------------------------------//
+//  //Colors
+//--------------------------------//
+
+.color {
+  color: $color;
+}
+
+.bare {
+  color: #bbb;
+}
+
+.pale {
+  color: #999;
+}
+
+.neutral {
+  color: #666;
+}
+
+.opaque {
+  color: #333;
+}
+
+.sharp {
+  color: #000;
+}
+
+.contrast {
+  color: #fff !important;
+}
+
+.firm, a.firm {
+  color: #f4b408 !important;
+}
+
+.positive {
+  color: #73ab00;
+}
+
+.negative {
+  color: #c20000;
+}
+
+a.bare, .bare a {
+  color: #bbb;
+}
+
+a.pale, .pale a {
+  color: #999;
+}
+
+a.neutral, .neutral a {
+  color: #666;
+}
+
+a.opaque, .opaque a {
+  color: #333;
+}
+
+a.sharp, .sharp a {
+  color: #000;
+}
+
+a.contrast, .contrast a {
+  color: #fff;
+}
+
+a.firm, .firm a {
+  color: #f4b408;
+}
+
+a.positive, .positive a {
+  color: #73ab00;
+}
+
+a.negative, .negative a {
+  color: #c20000;
+}
+
+.bgbare {
+  background: #bbb !important;
+}
+
+.bgpale {
+  background: #999;
+}
+
+.bgneutral {
+  background: #666;
+}
+
+.bgopaque, header.bgopaque {
+  background: #333333;
+}
+
+.bgsharp {
+  background: #000;
+}
+
+.bgcontrast {
+  background: #fff;
+}
+
+.bgfirm {
+  background: #f4b408;
+}
+
+.bgpositive {
+  background: #73ab00;
+}
+
+.bgnegative {
+  background: #c20000;
+}
+
+.bobare {
+  border-color: #bbb;
+}
+
+.bopale {
+  border-color: #999;
+}
+
+.boneutral {
+  border-color: #666;
+}
+
+.boopaque {
+  border-color: #333;
+}
+
+.bosharp {
+  border-color: #000;
+}
+
+.bocontrast {
+  border-color: #fff;
+}
+
+.bofirm {
+  border-color: #f4b408;
+}
+
+.bopositive {
+  border-color: #73ab00;
+}
+
+.bonegative {
+  border-color: #c20000;
+}
+
+.bothin {
+  border: 1px solid;
+}
+
+.bg_zen {
+  background: url(../assets/bg4.jpg) 0 0 no-repeat;
+}
+
+//--------------------------------//
+//  //icons
+//--------------------------------//
+
+// .icon_heart {
+//   width: 40px;
+//   height: 40px;
+//   background: url(/plugins/icons/skin/heart.svg) no-repeat center center;
+//   background-size: 80%;
+//   color: #000;
+// }
+
+// .icon_heart_firm {
+//   width: 20px;
+//   height: 20px;
+//   background: url(/plugins/icons/skin/noun_project_822_heart_firm.png) no-repeat center center;
+//   background-size: 80%;
+//   color: #000;
+// }
+
+// .twitter {
+//   background: url(/plugins/icons/skin/twitter.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .google {
+//   background: url(/plugins/icons/skin/google_plus.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .linkedin {
+//   background: url(/plugins/icons/skin/linkedin.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .pinterest {
+//   background: url(/plugins/icons/skin/pinterest.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .wordpress {
+//   background: url(/plugins/icons/skin/wordpress.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .twitter span, .google span, .linkedin span, .pinterest span, .nak span, .wordpress span {
+//   position: absolute;
+//   text-indent: -9999px;
+// }
+
+// .twitter em, .google em, .linkedin em, .pinterest em, .wordpress em {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.nak {
+  background: url(../assets/nak.png) no-repeat top center;
+  background-size: 100%;
+  position: relative;
+}
+
+.underline {
+  background: url(../assets/underline.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.underline_contrast {
+  background: url(../assets/underline_contrast.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.tshadow {
+  text-shadow: 0 1px 0 black, 0 -1px 0 white;
+}
+
+.boxshadowl {
+  box-shadow: 5px 5px 30px #999;
+}
+
+.bora10 {
+  border-radius: 0px 10px 0px 10px;
+}
+
+ul.boxshadow2 li {
+  box-shadow: 3px 3px 5px #000;
+}
+
+.img-wrap {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  // -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/alpha.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  &:after {
+    background: url(../assets/pattern2.png) 0 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slide {}
+
+.slide1 {
+  background: url(http://explikator.de/wp-content/uploads/2014/04/pippi-langstrumpf-3851200.jpg) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.slide2 {
+  background: url(http://media-cache-ak0.pinimg.com/736x/28/c3/6e/28c36efdad34e611052bce0744c8d79b.jpg) 0 -250px no-repeat;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url(http://media-cache-ak0.pinimg.com/736x/bc/44/1c/bc441c8f971bae28a95dc42a792d7519.jpg) 0 -250px no-repeat;
+  background-size: cover;
+}
+
+.slide4 {
+  background: url(http://images04.kurier.at/46-22505325.jpg/88.304.420) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.slide5 {
+  background: url(http://www.spiel-ideen.ch/spielzeug-online-shop/public/images_1000px/09329_3-ravensburger.jpg) 0 -300px no-repeat;
+  // background: url(http://media-cache-ak0.pinimg.com/736x/60/3a/b0/603ab01310bd3cbfe0fab5516d24449c.jpg) 0 -300px no-repeat;
+  background-size: cover;
+}
+
+.slide6 {
+  background: url(http://data2.puzzle.de/cache/1/image/2/8/28.247_02.jpg) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.slide7 {
+  background: url(http://2.bp.blogspot.com/-J81drI2FO9I/U9F92X3PQaI/AAAAAAAAOXA/CZ88h6hy9-0/s1600/.21+Pippi+Langstrumpf.jpg) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.csswinner {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  z-index: 999;
+  a {
+    width: 67px;
+    height: 101px;
+    text-indent: -9000px;
+    display: block;
+    background: url(../assets/nominee-new-black-right.png) no-repeat;
+  }
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
+
+//
+//
+//
+//
+//
