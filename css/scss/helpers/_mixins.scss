@@ -1,0 +1,7 @@
+// @include "mxFlexbox";
+
+@mixin negative-color {
+  &.negative {
+    color: $white;
+  }
+}

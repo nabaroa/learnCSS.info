@@ -1,0 +1,150 @@
+//--------------------------------//
+//  navigation 
+//--------------------------------//
+body {
+  overflow: hidden;
+}
+
+nav {
+  &.second-nav {
+    width: 50px;
+    background: $white;
+    left: -35px;
+    position: fixed;
+    bottom: 0px;
+  }
+  &#index {
+    height: calc(100vh - #{$block});
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      background: pink;
+      width: 25%;
+      text-decoration: none;
+      justify-content: center;
+      text-align: center;
+      color: $white;
+      font-size: 2em;
+      cursor: pointer;
+      @media all and (max-width: $mobile-width) {
+        width: 100%;
+        min-height: 100px;
+      }
+      &:focus, &:hover {
+        span {
+          transform: translate(0, -10px);
+          transition: .5s;
+        }
+      }
+      &:nth-of-type(1),
+      &:nth-of-type(5),
+      &:nth-of-type(9) {
+        background: $color1;
+        &:focus, &:hover {
+          background: darken($color1, 4%);
+          transition: .5s;
+        }
+      }
+      &:nth-of-type(2),
+      &:nth-of-type(6),
+      &:nth-of-type(10) {
+        background: $color2;
+        &:focus, &:hover {
+          background: darken($color2, 4%);
+          transition: .5s;
+        }
+      }
+      &:nth-of-type(3),
+      &:nth-of-type(7),
+      &:nth-of-type(11) {
+        background: $color3;
+        &:focus, &:hover {
+          background: darken($color3, 4%);
+          transition: .2s;
+        }
+      }
+      &:nth-of-type(4),
+      &:nth-of-type(8),
+      &:nth-of-type(12) {
+        background: $color4;
+        &:focus, &:hover {
+          background: darken($color4, 4%);
+          transition: .2s;
+        }
+      }
+      &:nth-of-type(5),
+      &:nth-of-type(6),
+      &:nth-of-type(7),
+      &:nth-of-type(8) {
+        opacity: .8;
+      }
+      &:nth-of-type(9),
+      &:nth-of-type(10),
+      &:nth-of-type(11),
+      &:nth-of-type(12) {
+        opacity: .6;
+        // }
+        a {
+          // display: block;
+          // align-self: stretch;
+       
+        }
+      }
+    }
+  }
+}
+
+.close {
+  position: fixed;
+  right: 1vh;
+  top: 1vh;
+  font-size: 2em;
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  left: 1vh;
+  top: 1vh;
+  font-size: 2em;
+  display: none;
+}
+
+.go-down {
+  position: fixed;
+  left: 50vw;
+  bottom: 1vh;
+  font-size: 4em;
+  display: none;
+}
+
+.go-right {
+  position: fixed;
+  top: 50vh;
+  right: 1vw;
+  font-size: 4em;
+  display: none;
+}
+
+.go-left {
+  position: fixed;
+  top: 50vh;
+  left: 1vw;
+  font-size: 4em;
+  display: none;
+}
+
+.tool {
+  cursor: pointer;
+  z-index: 3;
+}
+
+.tools {
+  @include negative-color;
+}
+
+.sidebar {}

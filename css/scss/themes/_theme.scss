@@ -1,0 +1,237 @@
+//--------------------------------//
+//  Theme
+//--------------------------------//
+
+a {
+  color: #666666;
+  text-decoration: none;
+  // &:visited {
+  //   color: #666666;
+  // }
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  img.logo {
+    height: calc(#{$block} - 2vh);
+  }
+  display: inherit;
+}
+
+header {
+  [class^="icon"] {
+    font-size: 2em;
+  }
+}
+
+section {
+  > article {
+    &:first-of-type {
+      color: $white;
+    }
+  }
+}
+
+//--------------------------------//
+//  //Remove underline on hover
+//--------------------------------//
+
+.share a, .main nav a {
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
+.nak {
+  background: url(../assets/nak.png) no-repeat top center;
+  background-size: 100%;
+  position: relative;
+}
+
+.underline {
+  background: url(../assets/underline.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.underline_contrast {
+  background: url(../assets/underline_contrast.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.csswinner {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  z-index: 999;
+  a {
+    width: 67px;
+    height: 101px;
+    text-indent: -9000px;
+    display: block;
+    background: url(../assets/nominee-new-black-right.png) no-repeat;
+  }
+}
+
+.nabaroa {
+  background: url(../assets/nabaroa.jpg) 0 0 no-repeat;
+  width: 80vw;
+  height: 80vw;
+  border-radius: 500rem;
+  background-size: cover;
+  margin: auto !important;
+  max-width: 40vh;
+  max-height: 40vh;
+}
+
+.negative {
+  color: $white;
+}
+
+.light {
+  color: $white;
+}
+
+.reveal {
+  .centered {
+    // h1 {
+    //   // padding-top: 30%;
+    //   display: block;
+    // }
+    // display: flex !important;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+ 
+  }
+  .text {
+    // padding: 0 20px;
+    &.thin {
+      font-family: $light;
+    }
+    &.bold {
+      font-family: $bold;
+    }
+    &.color {
+      color: $color;
+    }
+    &.cite {
+      font-family: $light;
+      margin: 40px 0;
+    }
+    &.huge {
+      font-size: 3em;
+      line-height: 0.8em;
+    }
+    &.small {
+      font-size: .6em;
+    }
+    &.left {
+      text-align: left;
+    }
+  }
+  strong {
+    font-family: $bold;
+  }
+}
+
+.fixed {
+  position: fixed !important;
+  &.bottom {
+    bottom: 10px;
+  }
+  &.top {
+    top: 0px;
+  }
+  &.right {
+    right: 0;
+  }
+}
+
+.reveal {
+  a.icon-source {
+    text-decoration: none;
+    position: relative;
+    &:hover {
+      &:after {
+        display: block;
+      }
+    }
+    &:after {
+      content: "Source";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      display: none;
+      font-family: $light;
+      font-size: .8em;
+    }
+  }
+  a.gototop {
+    position: relative;
+    text-decoration: none;
+    &:hover {
+      &:after {
+        display: block;
+      }
+    }
+    &:after {
+      content: "Go to top";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      display: none;
+      font-family: $light;
+      font-size: .8em;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+  a.gotomenu {
+    text-decoration: none;
+    position: relative;
+    &:hover {
+      &:after {
+        display: block;
+      }
+    }
+    &:after {
+      content: "Go to module menu";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      display: none;
+      font-family: $light;
+      font-size: .8em;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25% !important;
+  padding-top: 30px !important;
+  height: 0 !important;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//
+//
+//
+//
+//
