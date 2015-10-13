@@ -12,8 +12,9 @@ var goTo9 = document.getElementById("goTo9");
 var goTo10 = document.getElementById("goTo10");
 var goTo11 = document.getElementById("goTo11");
 var goTo12 = document.getElementById("goTo12");
+var goToAbout = document.getElementById("goToAbout"); 
 var menu = document.getElementById("menu");
-var controls = document.getElementById("controls");
+var controls = document.getElementById("controls"); 
 
 
 //event
@@ -31,6 +32,7 @@ goTo9.addEventListener("click", hideNavigation);
 goTo10.addEventListener("click", hideNavigation);
 goTo11.addEventListener("click", hideNavigation);
 goTo12.addEventListener("click", hideNavigation);
+goToAbout.addEventListener("click", hideNavigation);
 menu.addEventListener("click", showNavigation);
 
 //function
