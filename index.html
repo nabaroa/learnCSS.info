@@ -1004,7 +1004,9 @@ resize: none|both|horizontal|vertical|inherit;
                         <li><a href="#/CSS_color" class="white"><span class="text bold">Color</span> Module Level 3</a>
                             <a class="icon-source" href="http://www.w3.org/TR/css3-color/" target="_blank"></a>
                         </li>
-                        <li><a href="#/CSS_fonts" class="white"><span class="text bold" class="white">CSS Fonts</span> Module Level 3</a> <a class="icon-source" href="http://www.w3.org/TR/css3-fonts/" target="_blank"></a></li>
+                        <li><a href="#/CSS_fonts" class="white"><span class="text bold" class="white">CSS Fonts</span> Module Level 3</a>
+                            <a class="icon-source" href="http://www.w3.org/TR/css3-fonts/" target="_blank"></a>
+                        </li>
                     </ul>
                 </section>
                 <!-- kra -->
@@ -1522,6 +1524,43 @@ box-shadow: <span class="text color bold">inset</span> 2px 2px 20px #333;
                         <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
                     </nav>
                 </section>
+                <section data-background="#6eb9bd" id="CSS_fonts">
+                    <h1 class="text thin">CSS <span class="text  bold">Fonts</span> module</h1>
+                    <h2 class="text thin">Level 3</h2>
+                    <nav class="second-nav">
+                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/" target="_blank"></a>
+                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
+                <section>
+                    <h1 class="text thin">@font-face rule</h1>
+                    <nav class="second-nav">
+                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/#font-face-rule
+" target="_blank"></a>
+                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
+                <section>
+                    <h1 class="text thin">@font-face rule</h1>
+                    <h2 class="text thin">Allows for <span class="text bold color">linking to fonts</span> that are automatically fetched and activated when needed. </h2>
+                    <pre>
+@font-face {
+    font-family: Gentium;
+    src: url(http://example.com/fonts/Gentium.woff);
+}
+                    </pre>
+                    <pre>
+p { font-family: Gentium, serif; }
+                    </pre>
+                    <nav class="second-nav">
+                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/#font-face-rule
+" target="_blank"></a>
+                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
                 <!-- 32 -->
                 <!-- kre -->
             </section>
@@ -1973,43 +2012,6 @@ div {
                     </pre>
                 </section>
                 <!-- kris -->
-                <section data-background="#6eb9bd" id="CSS_fonts">
-                    <h1 class="text thin">CSS <span class="text  bold">Fonts</span> module</h1>
-                    <h2 class="text thin">Level 3</h2>
-                    <nav class="second-nav">
-                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/" target="_blank"></a>
-                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
-                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
-                    </nav>
-                </section>
-                <section>
-                    <h1 class="text thin">@font-face rule</h1>
-                    <nav class="second-nav">
-                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/#font-face-rule
-" target="_blank"></a>
-                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
-                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
-                    </nav>
-                </section>
-                <section>
-                    <h1 class="text thin">@font-face rule</h1>
-                    <h2 class="text thin">Allows for <span class="text bold color">linking to fonts</span> that are automatically fetched and activated when needed. </h2>
-                    <pre>
-@font-face {
-    font-family: Gentium;
-    src: url(http://example.com/fonts/Gentium.woff);
-}
-                    </pre>
-                    <pre>
-p { font-family: Gentium, serif; }
-                    </pre>
-                    <nav class="second-nav">
-                        <a class="icon-source " href="http://www.w3.org/TR/css3-fonts/#font-face-rule
-" target="_blank"></a>
-                        <a href="#/CSS_style" class="icon-angle-up gototop"></a>
-                        <a href="#/CSS_style_menu" class="icon-menu gotomenu"></a>
-                    </nav>
-                </section>
             </section>
             <!-- kro -->
             <section>
@@ -2870,10 +2872,23 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
             </section>
             <!-- kru -->
             <section>
-                <section data-background="#c74a7a">
+                <section id="CSS_processors" data-background="#c74a7a">
                     <h1>CSS processors</h1>
                 </section>
-                <section data-background="#c74a7a" class="centered light">
+                <section id="CSS_processors_menu" data-background="#c74a7a">
+                    <ul class="text thin">
+                        <li><a href="#/CSS_preprocessors" class="white"><span class="text bold">Preprocessors</span> </a>
+                            <a class="icon-source white" href="http://sass-lang.com/" target="_blank"></a>
+                        </li>
+                        <li><a href="#/CSS_postprocessors" class="white"><span class="text bold">Postprocessors</span> </a>
+                            <a class="icon-source white" href="https://github.com/postcss/postcss" target="_blank"></a>
+                        </li>
+                        <li><a href="#/gulp" class="white"><span class="bold text">Gulp</span> </a>
+                            <a class="icon-source white" href="http://gulpjs.com/" target="_blank"></a>
+                        </li>
+                    </ul>
+                </section>
+                <section data-background="#c74a7a" id="CSS_preprocessors" class="light">
                     <h1 class="text thin"><span class="text bold ">Pre</span>processors</h1>
                 </section>
                 <!-- 2 -->
@@ -2882,7 +2897,7 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
                     <h1>
                  
 
-                        <img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png" alt="Sass" width="427" height="320"></h1>
+                        <img src="assets/sass.jpg" alt="Sass" ></h1>
                     <h1 class="text thin" style="text-align: center;"><a href="http://sass-lang.com/" target="_blank" >
                     sass-lang.com/</a>
                    </h1>
@@ -3774,6 +3789,44 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
                         <li>Many levels of nesting causes a very dependent and inflexible code. Avoid deep nesting.</li>
                     </ul>
                 </section>
+                <section data-background="#c74a7a" class=" light" id="CSS_postprocessors">
+                    <h1 class="text thin"><span class="text bold ">Post</span>processors</h1>
+                </section>
+                <section class="centered light">
+                    <h1 class="text thin"><span class="text bold ">Post</span>CSS</h1>
+                    <h2 class="thin text">PostCSS is a tool for <span class="text bold color">transforming styles with JS plugins</span>. These plugins can support variables and mixins, transpile future CSS syntax, inline images, and more.</h2>
+                    <nav class="second-nav">
+                        <a class="icon-source" href="https://github.com/postcss/postcss" target="_blank"></a>
+                        <a href="#/CSS_processors" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_processors_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
+                <section class="centered light">
+                    <h1 class="text thin">Autoprefixer</h1>
+                    <h2 class="text thin">PostCSS plugin to parse CSS and add <span class="text bold color">vendor prefixes</span> to CSS rules using values from Can I Use.</h2>
+                    <nav class="second-nav">
+                        <a class="icon-source " href="https://github.com/postcss/autoprefixer" target="_blank"></a>
+                        <a href="#/CSS_processors" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_processors_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
+                <section data-background="#c74a7a" id="gulp">
+                    <h1 class="text thin">Gulp</h1>
+                    <nav class="second-nav">
+                        <a class="icon-source " href="http://gulpjs.com/" target="_blank"></a>
+                        <a href="#/CSS_processors" class="icon-angle-up  gototop"></a>
+                        <a href="#/CSS_processors_menu" class="icon-menu  gotomenu"></a>
+                    </nav>
+                </section>
+                <section>
+                    <h1 class="text thin">Gulp</h1>
+                    <h2 class="text thin"><span class="text bold color">Automate and enhance</span> your workflow</h2>
+                    <nav class="second-nav">
+                        <a class="icon-source" href="http://gulpjs.com/" target="_blank"></a>
+                        <a href="#/CSS_processors" class="icon-angle-up gototop"></a>
+                        <a href="#/CSS_processors_menu" class="icon-menu gotomenu"></a>
+                    </nav>
+                </section>
                 <!-- 27 -->
                 <!-- Atribucion -->
             </section>
@@ -3785,6 +3838,27 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
                 <section data-background="#d3769b" class="centered light">
                     <h1>CSS Arquitecture</h1>
                 </section>
+                <section>
+                    <h1 class="text thin"><span class="color text bold">DRY</span> (Don´t Repeat Yourself)</h1>
+                </section>
+                <section>
+                    <h1 class="text thin">Avoid extra selectors</h1>
+                    <pre>
+body #container .someclass ul li {....} <span class="color text bold">Wrong</span>
+                    </pre>
+                      <pre>
+.someclass li {...}<span class="color text bold">Correct</span>
+                    </pre>
+                </section>
+                <section>
+                <h1 class="text bold">Beware of <div class="text bold color">specificity</div></h1>
+                    <img src="assets/especificidadCSS.png" alt="">
+                </section>
+                <section>
+                    <h1 class="text thin">The <div class="text bold color">name</div> matters</h1>
+                    <ul><li>BEM<a class="icon-source" href="https://en.bem.info/method/naming-convention/" target="_blank"></a></li>
+                    <li>Atomic design<a class="icon-source" href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank"></a></li></ul>
+                </section>
                 <!-- 2 -->
                 <section>
                     <h1 class="text thin">smacss</h1>
@@ -3792,7 +3866,7 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
                       <a  
                     href="http://smacss.com/" target="_blank">smacss.com/</a>
                    </h5>
-                </section>
+                </section> 
                 <!-- 3 -->
                 <!-- 4 -->
                 <!-- 5 -->
@@ -3814,11 +3888,9 @@ background: linear-gradient(to right, $color1 0%,$color2 75%,$color3 100%); /* W
                     <p class="text thin">with <span class="color text">♡</span> by
                         <br><span class="bold text">naiara abaroa</span></p>
                     <p><a href="https://twitter.com/nabaroa" target="_blank">@nabaroa</a></p>
-                   
-                        <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                            <img alt="Licencia Creative Commons" style="border-width:0; vertical-align:-10px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-                        </a>
-                   
+                    <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                        <img alt="Licencia Creative Commons" style="border-width:0; vertical-align:-10px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                    </a>
                 </section>
                 <section>
                     <h1 class="text thin">Credits<img src="http://naknak.me/images/creativecommons.png" alt="Creative commons" width="100" height="100" style="margin-bottom:-30px;">
